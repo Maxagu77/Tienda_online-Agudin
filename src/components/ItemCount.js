@@ -1,7 +1,8 @@
+import * as React from "react"
 import { useState } from "react"
 
- function ItemCount ({stock,initial}) {
 
+ function ItemCount ({stock,initial}) {
     const [state, setState] = useState(0);
     const [sumar,setSumar] = useState(false);
 
@@ -25,7 +26,7 @@ import { useState } from "react"
       <div>
         <table>
             <tr>   
-               <th><button disabled={sumar} onClick={handleClick}>+</button></th>
+               <th><button disableds={stock=30} onClick={handleClick}>+</button></th>
                <th>
                    <h1>{state}</h1>
                </th>
